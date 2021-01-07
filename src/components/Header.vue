@@ -1,11 +1,27 @@
 <template>
   <header>
     <nav class="nav-container">
-      <a href="/">
-        <img alt="logo" id="logo" src="../assets/images/wdev.svg">
-      </a>
-      <!-- Adicionar botão menu -->
-      <img id="menu-logo" src="../assets/images/menu.svg" alt="menu">
+      <!-- Logo -->
+      <a href="/"><img src="../assets/images/wdev.svg" alt="logo wdev" id="logo"></a>
+
+      <!-- Menu navegação -->
+      <img src="../assets/images/menu.svg" alt="menu" id="menu-button">
+
+      <!-- Menu overlay -->
+      <div id="menu-overlay"></div>
+
+      <!-- Menu listas -->
+      <div id="menu-items">
+
+        <img src="../assets/images/wdev.svg" alt="logo wdev" id="menu-logo">
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/videos">Vídeos</a></li>
+          <li><a href="/sobre">Sobre</a></li>
+          <li><a href="/contato">Contato</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 </template>
@@ -25,15 +41,54 @@ export default {
     justify-content: center;
     align-items: center;
   }
-
-  #logo {
-    width: 8.12rem;
-  }
-  #menu-logo {
-    width: 1.87rem;
-  }
   nav {
     display: flex;
     justify-content: space-between;
+    align-content: center;
   }
+  #logo {
+    width: 8.12rem;
+  }
+
+  #menu-button {
+    width: 30px;
+  }
+
+  #menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    background: var(--color-background-overlay);
+    opacity: 0.8;
+  }
+  #menu-logo {
+    width: 6.87rem;
+    margin-top: 1.87rem;
+    margin-bottom: 10px;
+  }
+  #menu-items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--color-background-nav);
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+  ul li {
+    margin: 1.25rem 0;
+  }
+  ul li a {
+    color: var(--color-text-light);
+  }
+
 </style>
