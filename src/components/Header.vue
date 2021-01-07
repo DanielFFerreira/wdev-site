@@ -5,13 +5,15 @@
       <a href="/"><img src="../assets/images/wdev.svg" alt="logo wdev" id="logo"></a>
 
       <!-- Menu navegação -->
-      <img src="../assets/images/menu.svg" alt="menu" id="menu-button">
+      <img v-on:click="openMenu" src="../assets/images/menu.svg" alt="menu" id="menu-button">
 
       <!-- Menu overlay -->
-      <div id="menu-overlay"></div>
+      <div id="menu-overlay" v-if="menuActive"></div>
 
       <!-- Menu listas -->
-      <div id="menu-items">
+      <div id="menu-items" :class="{active:menuActive}">
+
+        <img v-on:click="closeMenu" src="../assets/images/close.svg" alt="menu fechar" id="menu-close">
 
         <img src="../assets/images/wdev.svg" alt="logo wdev" id="menu-logo">
 
@@ -28,7 +30,20 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data() {
+    return {
+      menuActive: true
+    }
+  },
+  methods: {
+    openMenu: function() {
+      this.menuActive = true;
+    },
+    closeMenu: function() {
+      this.menuActive = false;
+    }
+  }
 }
 </script>
 
@@ -53,6 +68,12 @@ export default {
   #menu-button {
     width: 30px;
   }
+  #menu-close {
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
 
   #menu-overlay {
     position: fixed;
@@ -65,7 +86,7 @@ export default {
   }
   #menu-logo {
     width: 6.87rem;
-    margin-top: 1.87rem;
+    margin-top: 3.87rem;
     margin-bottom: 10px;
   }
   #menu-items {
@@ -75,14 +96,18 @@ export default {
     background: var(--color-background-nav);
     width: 60%;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
+  #menu-items.active {
+    display: flex;
+  }
 
   ul {
     list-style: none;
+    text-align: center;
   }
   ul li {
     margin: 1.25rem 0;
