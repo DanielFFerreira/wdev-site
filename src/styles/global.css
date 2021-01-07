@@ -27,3 +27,8 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+/* Adicionar estilo no container */
+.nav-container {
+  width: 90%;
+}
