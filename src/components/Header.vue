@@ -60,6 +60,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    height: 60px;
+    align-items: center;
   }
   #logo {
     width: 8.12rem;
@@ -114,6 +116,31 @@ export default {
   }
   ul li a {
     color: var(--color-text-light);
+  }
+
+  @media (min-width: 700px) {
+    #menu-button,
+    #menu-logo,
+    #menu-overlay,
+    #menu-close {
+      display: none;
+    }
+    #menu-items {
+      display: flex;
+      position: static;
+      height: 60px;
+      width: auto;
+    }
+    ul {
+      display: flex;
+      height: 60px;
+      align-items: center;
+    }
+    ul li {
+      margin: 0;
+      margin-left: 25px;
+    }
+
   }
 
 </style>
