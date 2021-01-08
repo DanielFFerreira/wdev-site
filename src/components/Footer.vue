@@ -25,14 +25,7 @@ export default {
 </script>
 
 <style scoped>
-  footer {
-    height: 60px;
-    width: 100%;
-    background: var(--color-background-nav);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .socialLink {
     border: 2px solid var(--color-text-light);
     display: flex;

@@ -33,7 +33,7 @@ export default {
   name: 'Header',
   data() {
     return {
-      menuActive: true
+      menuActive: false
     }
   },
   methods: {

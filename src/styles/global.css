@@ -36,7 +36,22 @@ a:hover {
 
 main {
   width: 100%;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
+}
+h1 {
+  color: var(--color-text-title);
+  margin: 2.5rem 0;
+  font-size: 1.87rem;
+}
+
+/* Footer */
+footer {
+  height: 60px;
+  width: 100%;
+  background: var(--color-background-nav);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
