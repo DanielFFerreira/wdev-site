@@ -18,10 +18,10 @@
         <img src="../assets/images/wdev.svg" alt="logo wdev" id="menu-logo">
 
         <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/videos">Vídeos</router-link></li>
-          <li><router-link to="/sobre">Sobre</router-link></li>
-          <li><router-link to="/contato">Contato</router-link></li>
+          <li v-on:click="closeMenu"><router-link to="/">Home</router-link></li>
+          <li v-on:click="closeMenu"><router-link to="/videos">Vídeos</router-link></li>
+          <li v-on:click="closeMenu"><router-link to="/sobre">Sobre</router-link></li>
+          <li v-on:click="closeMenu"><router-link to="/contato">Contato</router-link></li>
         </ul>
       </div>
     </nav>
