@@ -30,6 +30,9 @@ a:hover {
 }
 
 /* Adicionar estilo no container */
+.container {
+  max-width: 960px;
+}
 .nav-container {
   width: 90%;
 }
