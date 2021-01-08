@@ -3,6 +3,10 @@
   <img src="./src/assets/images/vid1.gif" alt="img1" width="1000" height="600" />
 </div>
 
+<div style="text-align: center">
+  <img src="./src/assets/images/vid2.gif" alt="img1" width="1000" height="600" />
+</div>
+
 ## Project setup
 ```
 npm install
