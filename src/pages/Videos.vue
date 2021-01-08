@@ -4,8 +4,10 @@
 
 <script>
 export default {
-  name:'Video'
+  name:'Videos'
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+  
+</style>
