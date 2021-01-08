@@ -1,7 +1,11 @@
 # wdev-site
 <div style="text-align: center">
   <img src="./src/assets/images/img1.png" alt="img1" width="500" height="600" />
+</div>
+<div style="text-align: center">
   <img src="./src/assets/images/img2.png" alt="img1" width="500" height="600" />
+</div>
+<div style="text-align: center">
   <img src="./src/assets/images/img3.png" alt="img1" width="1000" height="600" />
 </div>
 
