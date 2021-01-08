@@ -7,7 +7,7 @@
         <div class="contact">
           <div class="contact-title">{{ contact.title }}</div>
 
-          <a href=""></a>
+          <a :href="contact.link" target="_blank">{{ contact.label }}</a>
         </div>
       </section>
 
@@ -42,9 +42,15 @@ export default {
     margin-bottom: 1.87rem;
     color: var(--color-text-dark);
   }
-  @media (min-width: 370px) and (max-width: 700px) {
-    main {
-      max-width: 390px;
-    }
+  .contact-title {
+    font-weight: 600;
+    font-size: 1.12rem;
+  }
+
+  .contacts a {
+    color: var(--color-text-dark);
+  }
+  .contacts {
+    margin-bottom: 1.25rem;
   }
 </style>
