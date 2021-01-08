@@ -1,4 +1,7 @@
 # wdev-site
+<div style="text-align: center">
+  <img src="../assets/images/v1.gif" alt="video gif" />
+</div>
 
 ## Project setup
 ```
