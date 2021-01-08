@@ -13,5 +13,8 @@ export default {
     height: 60px;
     width: 100%;
     background: var(--color-background-nav);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
