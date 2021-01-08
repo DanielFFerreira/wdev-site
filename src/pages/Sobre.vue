@@ -4,6 +4,7 @@
       <h1>Sobre</h1>
 
       <div class="about" v-html="about"></div>
+
     </section>
   </main>
 </template>
@@ -29,11 +30,15 @@ export default {
 <style scoped>
   main {
     align-items: center;
-    max-width: 450px;
     margin: 0 auto;
   }
   .about {
     margin-bottom: 1.87rem;
     color: var(--color-text-dark);
+  }
+  @media (min-width: 370px) and (max-width: 700px) {
+    main {
+      max-width: 390px;
+    }
   }
 </style>
