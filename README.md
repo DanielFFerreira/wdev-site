@@ -1,6 +1,8 @@
 # wdev-site
 <div style="text-align: center">
-  <img src="../assets/images/v1.gif" alt="video gif" />
+  <img src="./src/assets/images/img1.png" alt="img1" width="400" height="600" />
+  <img src="./src/assets/images/img2.png" alt="img1" width="400" height="600" />
+  <img src="./src/assets/images/img3.png" alt="img1" width="1200" height="600" />
 </div>
 
 ## Project setup
